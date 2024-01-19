@@ -19,6 +19,10 @@
       font-size: .9rem;
       letter-spacing: .5px;
 
+      &:hover {
+        color: $gray;
+      }
+
       &__active {
         font-weight: 900;
       }

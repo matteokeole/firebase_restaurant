@@ -1,10 +1,10 @@
 import Container from "/src/components/Container/Container";
 
-export default function NotFoundPage() {
+export default function MenusPage() {
     return (
         <Container>
             <h1>
-                404
+                Our Menus
             </h1>
         </Container>
     );

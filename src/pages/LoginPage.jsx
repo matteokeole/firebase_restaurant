@@ -2,6 +2,7 @@ import {useContext} from "react";
 import {Navigate} from "react-router-dom";
 
 import Login from "/src/components/Administration/Login/Login";
+import Container from "/src/components/Container/Container";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
 
 export default function LoginPage() {
@@ -14,12 +15,12 @@ export default function LoginPage() {
     }
 
     return (
-        <>
+        <Container>
             <h1>
                 Login
             </h1>
 
             <Login />
-        </>
+        </Container>
     );
 }

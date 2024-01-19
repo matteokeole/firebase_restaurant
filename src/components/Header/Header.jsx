@@ -15,8 +15,8 @@ export default function Header() {
                     Presentation
                 </NavLink>
 
-                <NavLink to="/menu" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
-                    Our Menu
+                <NavLink to="/menus" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
+                    Our Menus
                 </NavLink>
 
                 <NavLink to="/contact" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>

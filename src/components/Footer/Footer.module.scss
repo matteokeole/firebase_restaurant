@@ -1,3 +1,22 @@
+@import "/src/variables.scss";
+
 .footer {
-  //
+  padding: 24px 0;
+  background-color: $black;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &__link {
+      color: $gray;
+      text-decoration: none;
+
+      &__active {
+        color: $white;
+        font-weight: 900;
+      }
+    }
+  }
 }

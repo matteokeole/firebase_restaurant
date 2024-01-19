@@ -2,6 +2,7 @@ import {signOut} from "firebase/auth";
 import {useEffect} from "react";
 
 import {auth} from "/firebase.config";
+import Container from "/src/components/Container/Container";
 
 export default function LogoutPage() {
     useEffect(() => {
@@ -17,8 +18,8 @@ export default function LogoutPage() {
     }, []);
 
     return (
-        <>
-            Logging you out...
-        </>
+        <Container>
+            Logging out...
+        </Container>
     );
 }

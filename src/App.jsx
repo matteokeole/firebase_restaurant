@@ -12,9 +12,10 @@ import AdministrationLogoutPage from "/src/pages/Administration/LogoutPage";
 import ContactPage from "/src/pages/ContactPage";
 import HomePage from "/src/pages/HomePage";
 import LoginPage from "/src/pages/LoginPage";
-import MenuPage from "/src/pages/MenuPage";
+import MenusPage from "/src/pages/MenusPage";
 import NotFoundPage from "/src/pages/NotFoundPage";
 import PresentationPage from "/src/pages/PresentationPage";
+import SitemapPage from "/src/pages/SitemapPage";
 
 export default function App() {
     return (
@@ -28,8 +29,9 @@ export default function App() {
                             <Routes>
                                 <Route path="/" element={<HomePage />} />
                                 <Route path="/presentation" element={<PresentationPage />} />
-                                <Route path="/menu" element={<MenuPage />} />
+                                <Route path="/menus" element={<MenusPage />} />
                                 <Route path="/contact" element={<ContactPage />} />
+                                <Route path="/sitemap" element={<SitemapPage />} />
                                 <Route path="/administration" element={<AdministrationBasePage />}>
                                     <Route path="/administration" element={<AdministrationHomePage />} />
                                     <Route path="/administration/logout" element={<AdministrationLogoutPage />} />

@@ -1,7 +1,8 @@
 import {useContext} from "react";
+import {Navigate} from "react-router-dom";
 
+import Container from "/src/components/Container/Container";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
-import LoginPage from "/src/pages/LoginPage";
 
 export default function HomePage() {
     const {user} = useContext(AuthenticationContext);
@@ -13,10 +14,10 @@ export default function HomePage() {
     }
 
     return (
-        <>
+        <Container>
             <h1>
-                Admin Home
+                Administration
             </h1>
-        </>
+        </Container>
     );
 }
