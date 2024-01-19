@@ -8,7 +8,7 @@ import Header from "/src/components/Header/Header";
 import {AuthenticationContextProvider} from "/src/contexts/AuthenticationContext";
 import {RecipeContextProvider} from "/src/contexts/RecipeContext";
 import AdministrationBasePage from "/src/pages/Administration/BasePage";
-import AdministrationHomePage from "/src/pages/Administration/HomePage";
+import AdministrationHomePage from "/src/pages/Administration/HomePage/HomePage";
 import AdministrationLogoutPage from "/src/pages/Administration/LogoutPage";
 import AdministrationRecipePage from "/src/pages/Administration/RecipePage";
 import ContactPage from "/src/pages/ContactPage";
