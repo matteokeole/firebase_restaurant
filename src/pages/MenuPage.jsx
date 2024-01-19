@@ -1,10 +1,10 @@
 import Container from "/src/components/Container/Container";
 
-export default function HomePage() {
+export default function MenuPage() {
     return (
         <Container>
             <h1>
-                Administration
+                Our Menus
             </h1>
         </Container>
     );

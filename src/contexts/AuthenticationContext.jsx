@@ -8,7 +8,8 @@ const AuthenticationContext = createContext(null);
 export default AuthenticationContext;
 
 /**
- * @param {React.ReactNode} children
+ * @param {Object} props
+ * @param {React.ReactNode} props.children
  */
 export function AuthenticationContextProvider({children}) {
     const [user, setUser] = useState(null);
