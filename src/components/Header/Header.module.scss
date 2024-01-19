@@ -3,6 +3,8 @@
 .header {
   display: flex;
   padding: 12px 0;
+  top: 0;
+  position: sticky;
   background-color: $black;
 
   &__logo {
@@ -15,7 +17,6 @@
 
     &__link {
       color: $white;
-      text-decoration: none;
       font-size: .9rem;
       letter-spacing: .5px;
 

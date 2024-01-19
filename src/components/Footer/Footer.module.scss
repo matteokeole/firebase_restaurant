@@ -7,11 +7,11 @@
   &__nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     row-gap: 8px;
 
     &__link {
       color: $gray;
-      text-decoration: none;
 
       &__active {
         color: $white;

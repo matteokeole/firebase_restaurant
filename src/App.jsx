@@ -1,3 +1,4 @@
+import "leaflet/dist/leaflet.css";
 import {StrictMode} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import {useContext} from "react";
 import {Navigate} from "react-router-dom";
 
-import Login from "/src/components/Administration/Login/Login";
+import Login from "/src/components/Login/Login";
 import Container from "/src/components/Container/Container";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
 
