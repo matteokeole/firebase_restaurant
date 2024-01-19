@@ -3,7 +3,7 @@ import {Navigate, Outlet} from "react-router-dom";
 
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
 
-export default function Page() {
+export default function BasePage() {
     const {user} = useContext(AuthenticationContext);
 
     if (!user) {
