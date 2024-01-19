@@ -2,7 +2,7 @@ export default function MenuPage() {
     return (
         <>
             <h1>
-                Menu
+                Our Menu
             </h1>
         </>
     );

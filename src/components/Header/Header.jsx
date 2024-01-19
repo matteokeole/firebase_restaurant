@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 
 import styles from "/src/components/Header/Header.module.scss";
+import tag from "/src/utils/tag";
 
 export default function Header() {
     return (
@@ -9,17 +10,17 @@ export default function Header() {
                 <img src="#" alt="Logo" />
             </NavLink>
 
-            <nav>
-                <NavLink to="/presentation">
+            <nav className={styles.header__nav}>
+                <NavLink to="/presentation" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
                     Presentation
                 </NavLink>
 
-                <NavLink to="/menu">
-                    Our menu
+                <NavLink to="/menu" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
+                    Our Menu
                 </NavLink>
 
-                <NavLink to="/contact">
-                    Contact us
+                <NavLink to="/contact" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
+                    Contact Us
                 </NavLink>
             </nav>
         </header>

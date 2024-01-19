@@ -2,7 +2,7 @@ export default function ContactPage() {
     return (
         <>
             <h1>
-                Contact
+                Contact Us
             </h1>
         </>
     );

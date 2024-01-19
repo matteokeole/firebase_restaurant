@@ -1,0 +1,51 @@
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-Black.otf");
+  font-family: "Radio Grotesk";
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-BlackItalic.otf");
+  font-family: "Radio Grotesk";
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-Regular.otf");
+  font-family: "Radio Grotesk";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-RegularItalic.otf");
+  font-family: "Radio Grotesk";
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-Ultralight.otf");
+  font-family: "Radio Grotesk";
+  font-weight: 200;
+}
+
+@font-face {
+  src: url("/src/assets/fonts/RadioGrotesk-UltralightItalic.otf");
+  font-family: "Radio Grotesk";
+  font-style: italic;
+  font-weight: 200;
+}
+
+* {
+  font-family: "Radio Grotesk", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
