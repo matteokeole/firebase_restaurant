@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 
-import styles from "./Footer.module.scss";
+import styles from "/src/components/Footer/Footer.module.scss";
 
 export default function Footer() {
     return (
