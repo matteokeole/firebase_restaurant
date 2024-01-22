@@ -7,9 +7,17 @@ import styles from "/src/pages/Administration/HomePage/index.module.scss";
 export default function HomePage() {
     return (
         <Container>
-            <h1>
-                Administration
-            </h1>
+            <div className={styles.header}>
+                <h1 className={styles.header__title}>
+                    Administration
+                </h1>
+
+                <div className={styles.header__toolbar}>
+                    <Link to="/administration/logout" className={styles.header__toolbar__logOutLink}>
+                        Log out
+                    </Link>
+                </div>
+            </div>
 
             <section className={styles.cards}>
                 <Link to="/administration/recipes">
@@ -24,12 +32,6 @@ export default function HomePage() {
                     </Card>
                 </Link>
             </section>
-
-            <div className={styles.toolbar}>
-                <Link to="/administration/logout" className={styles.toolbar__link}>
-                    Log out
-                </Link>
-            </div>
         </Container>
     );
 }

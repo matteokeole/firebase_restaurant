@@ -18,5 +18,13 @@
         font-weight: 900;
       }
     }
+
+    &__logOutLink {
+      color: scale-color($red, $lightness: 20%);
+
+      &:hover {
+        color: scale-color($red, $lightness: 30%);
+      }
+    }
   }
 }
