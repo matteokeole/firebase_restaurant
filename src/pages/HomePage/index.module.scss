@@ -3,10 +3,16 @@
 .cartLink {
   display: block;
   margin: 16px 0;
-  padding: 12px;
+  padding: 24px 0;
   border: 1px solid $green;
   border-radius: 8px;
   background-color: scale-color($green, $lightness: 80%);
   color: $green;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+
+  &:hover {
+    background-color: scale-color($green, $lightness: 70%);
+  }
 }

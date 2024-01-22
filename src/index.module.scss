@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 @font-face {
   src: url("/src/assets/fonts/RadioGrotesk-Black.otf");
   font-family: "Radio Grotesk";
@@ -43,9 +45,11 @@
 
 body {
   margin: 0;
+  background-color: $black;
 }
 
 h1 {
+  margin-top: 0;
   font-size: 3rem;
 }
 
@@ -74,5 +78,6 @@ img {
 }
 
 main {
-  padding-bottom: 48px;
+  padding: 32px 0 48px 0;
+  background-color: $white;
 }

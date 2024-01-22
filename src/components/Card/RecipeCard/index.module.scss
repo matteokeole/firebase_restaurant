@@ -2,13 +2,13 @@
 
 .recipeCard {
   overflow: hidden;
+  border: 1px solid $gray;
   border-radius: 8px;
-  box-shadow: 0 4px 8px #0001;
-  background-color: $white;
+  background-color: $lightGray;
   cursor: pointer;
 
   &:hover {
-    background-color: $lightGray;
+    background-color: $white;
   }
 
   &__content {
@@ -16,6 +16,7 @@
     flex-direction: column;
     row-gap: 16px;
     padding: 16px;
+    border-top: 1px solid $gray;
 
     &__header {
       display: flex;

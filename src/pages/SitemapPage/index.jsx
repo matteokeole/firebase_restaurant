@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
 
+import Card from "/src/components/Card";
 import Container from "/src/components/Container/Container";
+import styles from "/src/pages/SitemapPage/index.module.scss";
 
 export default function SitemapPage() {
     return (
@@ -9,21 +11,29 @@ export default function SitemapPage() {
                 Sitemap
             </h1>
 
-            <nav>
+            <nav className={styles.sitemap}>
                 <Link to="/">
-                    Home
+                    <Card>
+                        Home
+                    </Card>
                 </Link>
 
                 <Link to="/presentation">
-                    Presentation
+                    <Card>
+                        Presentation
+                    </Card>
                 </Link>
 
                 <Link to="/menus">
-                    Our Menus
+                    <Card>
+                        Our Menus
+                    </Card>
                 </Link>
 
                 <Link to="/contact">
-                    Contact Us
+                    <Card>
+                        Contact Us
+                    </Card>
                 </Link>
             </nav>
         </Container>

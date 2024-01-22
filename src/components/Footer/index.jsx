@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 
 import Container from "/src/components/Container/Container";
-import styles from "/src/components/Footer/Footer.module.scss";
+import styles from "/src/components/Footer/index.module.scss";
 import tag from "/src/utils/tag";
 
 export default function Footer() {

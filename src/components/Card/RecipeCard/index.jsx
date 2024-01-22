@@ -23,7 +23,7 @@ export default function RecipeCard({recipe}) {
                     </div>
 
                     <div className={styles.recipeCard__content__header__toolbar}>
-                        toolbar
+                        //
                     </div>
                 </div>
 

@@ -13,8 +13,13 @@
 
   &__link {
     padding: 8px 16px;
+    border: 1px solid $red;
     border-radius: 8px;
-    background-color: scale-color($red, $lightness: 90%);
+    background-color: scale-color($red, $lightness: 80%);
     color: $red;
+
+    &:hover {
+      background-color: scale-color($red, $lightness: 70%);
+    }
   }
 }

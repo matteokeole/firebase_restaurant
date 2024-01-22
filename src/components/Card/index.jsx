@@ -1,4 +1,4 @@
-import styles from "/src/components/Card/Card.module.scss";
+import styles from "/src/components/Card/index.module.scss";
 
 /**
  * @param {Object} props

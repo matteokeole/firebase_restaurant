@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-import Card from "/src/components/Card/Card";
+import Card from "/src/components/Card";
 import Container from "/src/components/Container/Container";
 import styles from "/src/pages/Administration/HomePage/index.module.scss";
 
