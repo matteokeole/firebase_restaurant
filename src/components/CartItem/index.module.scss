@@ -1,0 +1,22 @@
+@import "/src/variables.scss";
+
+.cartItem {
+  display: flex;
+  background-color: $lightGray;
+
+  &:not(&:last-child) {
+    border-bottom: 1px solid $gray;
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &__image {
+    width: 64px;
+  }
+
+  &__content {
+    padding: 16px;
+  }
+}

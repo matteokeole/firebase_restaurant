@@ -22,6 +22,10 @@ export default function Header() {
                 <NavLink to="/contact" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
                     Contact Us
                 </NavLink>
+
+                <NavLink to="/cart" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
+                    Cart
+                </NavLink>
             </nav>
         </header>
     );
