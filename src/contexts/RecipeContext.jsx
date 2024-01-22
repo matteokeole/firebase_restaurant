@@ -27,6 +27,13 @@ export function RecipeContextProvider({children}) {
     const json = useFetch("/recipes.json");
     const [recipes, setRecipes] = useState([]);
 
+    /**
+     * @param {Number} order
+     */
+    const sortByName = order => {
+        setRecipes(recipes.toSorted((a, b) => a.name.localeCompare(b.name) * order));
+    };
+
     useEffect(() => {
         if (!json) {
             return;
@@ -36,7 +43,7 @@ export function RecipeContextProvider({children}) {
     }, [json]);
 
     return (
-        <RecipeContext.Provider value={{recipes}}>
+        <RecipeContext.Provider value={{recipes, sortByName}}>
             {children}
         </RecipeContext.Provider>
     );

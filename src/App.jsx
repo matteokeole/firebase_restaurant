@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import "/src/index.module.scss";
 import Footer from "/src/components/Footer/Footer";
-import Header from "/src/components/Header/Header";
+import Header from "/src/components/Header";
 import {AuthenticationContextProvider} from "/src/contexts/AuthenticationContext";
 import {RecipeContextProvider} from "/src/contexts/RecipeContext";
 import AdministrationBasePage from "/src/pages/Administration/BasePage";

@@ -1,18 +1,27 @@
-import {useContext} from "react";
+import {useContext, useState} from "react";
 
 import Badge from "/src/components/Badge";
 import styles from "/src/components/RecipeTable/index.module.scss";
+import SortByNameButton from "/src/components/Button/SortByNameButton";
 import RecipeContext from "/src/contexts/RecipeContext";
 
 export default function RecipeTable() {
-    const {recipes} = useContext(RecipeContext);
+    const {recipes, sortByName} = useContext(RecipeContext);
+    const [order, setOrder] = useState(0);
+
+    const handleSortByName = () => {
+        const newOrder = order === 0 ? 1 : -order;
+
+        sortByName(newOrder);
+        setOrder(newOrder);
+    };
 
     return (
         <table className={styles.recipeTable}>
             <thead className={styles.recipeTable__head}>
                 <tr className={styles.recipeTable__head__row}>
                     <th className={styles.recipeTable__head__row__cell}>
-                        Name
+                        <SortByNameButton order={order} onClick={handleSortByName} />
                     </th>
 
                     <th className={styles.recipeTable__head__row__cell}>
@@ -20,7 +29,7 @@ export default function RecipeTable() {
                     </th>
 
                     <th className={styles.recipeTable__head__row__cell}>
-                        Category
+                        Categories
                     </th>
                 </tr>
             </thead>
