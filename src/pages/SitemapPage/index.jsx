@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 
 import Card from "/src/components/Card";
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import styles from "/src/pages/SitemapPage/index.module.scss";
 
 export default function SitemapPage() {

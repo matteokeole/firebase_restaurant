@@ -1,7 +1,7 @@
 import {useContext} from "react";
 
 import Article from "/src/components/Article";
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import RecipeContext from "/src/contexts/RecipeContext";
 import styles from "/src/pages/PresentationPage/index.module.scss";
 

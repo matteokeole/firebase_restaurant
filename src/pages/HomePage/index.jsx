@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import styles from "/src/pages/HomePage/index.module.scss";
 
 export default function HomePage() {

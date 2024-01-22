@@ -66,6 +66,21 @@ a {
   text-decoration: none;
 }
 
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  background-color: $lightGray;
+  font-size: 1rem;
+
+  &:hover, &:focus {
+    background-color: $white;
+  }
+}
+
 button {
   all: inherit;
   padding: 0;

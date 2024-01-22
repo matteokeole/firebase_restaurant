@@ -2,7 +2,7 @@ import {signOut} from "firebase/auth";
 import {useEffect} from "react";
 
 import {auth} from "/firebase.config";
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 
 export default function LogoutPage() {
     useEffect(() => {

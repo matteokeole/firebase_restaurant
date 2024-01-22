@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import RecipeTable from "/src/components/RecipeTable";
 import styles from "/src/pages/Administration/RecipePage/index.module.scss";
 

@@ -1,4 +1,4 @@
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 
 export default function NotFoundPage() {
     return (

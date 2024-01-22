@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import styles from "/src/components/Footer/index.module.scss";
 import tag from "/src/utils/tag";
 

@@ -1,4 +1,4 @@
-import styles from "/src/components/Container/Container.module.scss";
+import styles from "/src/components/Container/index.module.scss";
 
 /**
  * @param {React.ReactNode} children

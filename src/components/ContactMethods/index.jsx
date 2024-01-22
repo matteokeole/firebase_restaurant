@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-import styles from "/src/components/ContactMethods/ContactMethods.module.scss";
+import styles from "/src/components/ContactMethods/index.module.scss";
 
 export default function ContactMethods() {
     return (

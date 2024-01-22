@@ -1,7 +1,7 @@
 import {useContext} from "react";
 
 import RecipeCard from "/src/components/Card/RecipeCard";
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
 import RecipeContext from "/src/contexts/RecipeContext";
 import styles from "/src/pages/MenuPage/index.module.scss";
 

@@ -1,5 +1,5 @@
-import ContactMethods from "/src/components/ContactMethods/ContactMethods";
-import Container from "/src/components/Container/Container";
+import ContactMethods from "/src/components/ContactMethods";
+import Container from "/src/components/Container";
 import Map from "/src/components/Map/Map";
 
 export default function ContactPage() {

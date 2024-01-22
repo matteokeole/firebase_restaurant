@@ -1,9 +1,10 @@
 import {useContext} from "react";
 import {Navigate} from "react-router-dom";
 
-import Login from "/src/components/Login/Login";
-import Container from "/src/components/Container/Container";
+import Container from "/src/components/Container";
+import LoginForm from "/src/components/Form/LoginForm";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
+import styles from "/src/pages/LoginPage/index.module.scss";
 
 export default function LoginPage() {
     const {user} = useContext(AuthenticationContext);
@@ -20,7 +21,9 @@ export default function LoginPage() {
                 Login
             </h1>
 
-            <Login />
+            <div className={styles.loginFormContainer}>
+                <LoginForm />
+            </div>
         </Container>
     );
 }
