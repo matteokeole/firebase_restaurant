@@ -1,0 +1,9 @@
+.article {
+  display: flex;
+  grid-column-gap: 32px;
+
+  img {
+    width: 280px;
+    border-radius: 8px;
+  }
+}
