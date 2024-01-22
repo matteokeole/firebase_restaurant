@@ -1,8 +1,8 @@
 import {useContext, useState} from "react";
 
 import Badge from "/src/components/Badge";
-import styles from "/src/components/RecipeTable/index.module.scss";
 import SortByNameButton from "/src/components/Button/SortByNameButton";
+import styles from "/src/components/RecipeTable/index.module.scss";
 import RecipeContext from "/src/contexts/RecipeContext";
 
 export default function RecipeTable() {

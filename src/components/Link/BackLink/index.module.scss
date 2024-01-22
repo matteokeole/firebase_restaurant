@@ -1,0 +1,11 @@
+@import "/src/variables.scss";
+
+.backLink {
+  padding: 4px 0;
+  color: $gray;
+
+  &:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+  }
+}
