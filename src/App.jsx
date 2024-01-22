@@ -8,9 +8,10 @@ import Header from "/src/components/Header/Header";
 import {AuthenticationContextProvider} from "/src/contexts/AuthenticationContext";
 import {RecipeContextProvider} from "/src/contexts/RecipeContext";
 import AdministrationBasePage from "/src/pages/Administration/BasePage";
-import AdministrationHomePage from "/src/pages/Administration/HomePage/HomePage";
+import AdministrationHomePage from "/src/pages/Administration/HomePage";
 import AdministrationLogoutPage from "/src/pages/Administration/LogoutPage";
 import AdministrationRecipePage from "/src/pages/Administration/RecipePage";
+import CartPage from "/src/pages/CartPage";
 import ContactPage from "/src/pages/ContactPage";
 import HomePage from "/src/pages/HomePage";
 import LoginPage from "/src/pages/LoginPage";
@@ -33,6 +34,7 @@ export default function App() {
                                 <Route path="/presentation" element={<PresentationPage />} />
                                 <Route path="/menus" element={<MenuPage />} />
                                 <Route path="/contact" element={<ContactPage />} />
+                                <Route path="/cart" element={<CartPage />} />
                                 <Route path="/sitemap" element={<SitemapPage />} />
                                 <Route path="/administration" element={<AdministrationBasePage />}>
                                     <Route path="/administration" element={<AdministrationHomePage />} />
