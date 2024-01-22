@@ -1,5 +1,5 @@
 import Container from "/src/components/Container/Container";
-import RecipeTable from "/src/components/RecipeTable/RecipeTable";
+import RecipeTable from "/src/components/RecipeTable";
 
 export default function RecipePage() {
     return (

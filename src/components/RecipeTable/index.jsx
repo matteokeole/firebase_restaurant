@@ -1,6 +1,7 @@
 import {useContext} from "react";
 
-import styles from "/src/components/RecipeTable/RecipeTable.module.scss";
+import Badge from "/src/components/Badge";
+import styles from "/src/components/RecipeTable/index.module.scss";
 import RecipeContext from "/src/contexts/RecipeContext";
 
 export default function RecipeTable() {
@@ -51,22 +52,12 @@ function RecipeRow({recipe}) {
             <td className={styles.recipeRow__cell}>
                 <div className={styles.recipeCategories}>
                     {recipe.mealType.map((category, index) => (
-                        <RecipeCategory key={index} category={category} />
+                        <Badge key={index}>
+                            {category}
+                        </Badge>
                     ))}
                 </div>
             </td>
         </tr>
-    );
-}
-
-/**
- * @param {Object} props
- * @param {String} props.category
- */
-function RecipeCategory({category}) {
-    return (
-        <div className={styles.recipeCategory}>
-            {category}
-        </div>
     );
 }

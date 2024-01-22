@@ -1,3 +1,12 @@
+@import "/src/variables.scss";
+
 .cartLink {
-  //
+  display: block;
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid $green;
+  border-radius: 8px;
+  background-color: scale-color($green, $lightness: 80%);
+  color: $green;
+  text-align: center;
 }

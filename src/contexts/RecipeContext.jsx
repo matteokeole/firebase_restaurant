@@ -6,7 +6,12 @@ import useFetch from "/src/hooks/useFetch";
  * @typedef {Object} Recipe
  * @property {Number} id
  * @property {String} name
+ * @property {String} image
  * @property {String} cuisine
+ * @property {String} difficulty
+ * @property {Number} prepTimeMinutes
+ * @property {Number} cookTimeMinutes
+ * @property {String[]} ingredients
  * @property {String[]} mealType
  */
 

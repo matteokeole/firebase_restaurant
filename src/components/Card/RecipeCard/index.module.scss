@@ -1,0 +1,54 @@
+@import "/src/variables.scss";
+
+.recipeCard {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0001;
+    background-color: $white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $lightGray;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding: 16px;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &__presentation {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+
+                &__title {
+                    font-size: 1.2rem;
+                }
+
+                &__details {
+                    color: $gray;
+                }
+            }
+
+            &__toolbar {
+                //
+            }
+        }
+
+        &__ingredients {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+    }
+}
