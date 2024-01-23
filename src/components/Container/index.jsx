@@ -1,11 +1,14 @@
 import styles from "/src/components/Container/index.module.scss";
+import tag from "/src/utils/tag";
 
 /**
- * @param {React.ReactNode} children
+ * @param {Object} props
+ * @param {?String} props.className
+ * @param {React.ReactNode} props.children
  */
-export default function Container({children}) {
+export default function Container({className, children}) {
     return (
-        <div className={styles.container}>
+        <div className={tag`${styles.container} ${className}`}>
             {children}
         </div>
     );
