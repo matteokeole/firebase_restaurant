@@ -8,18 +8,20 @@ import tag from "/src/utils/tag";
  * @param {String} props.placeholder
  * @param {?String} [props.value]
  * @param {Boolean} props.required
+ * @param {?Number} props.maxLength
  * @param {?String} props.error
  * @param {?Function} [props.onChange]
  */
-export default function TextInput({reference, type, placeholder, value, required, error, onChange}) {
+export default function TextInput({reference, type, placeholder, value, required, maxLength, error, onChange}) {
     return (
         <label className={styles.label}>
             <input
                 ref={reference}
                 type={type}
-                placeholder={`${placeholder} ${required && "*"}`}
+                placeholder={`${placeholder}${required ? " *" : ""}`}
                 value={value ?? ""}
                 required={required}
+                maxLength={maxLength}
                 className={tag`${styles.label__input} ${!!error && styles.label__input__invalid}`}
                 onChange={onChange}
             />

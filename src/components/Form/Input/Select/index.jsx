@@ -16,7 +16,7 @@ export default function Select({multiple = false, placeholder, defaultValue, opt
             onChange={onChange}
         >
             <option value="" disabled>
-                {placeholder} {required && "*"}
+                {placeholder}{required ? " *" : ""}
             </option>
 
             {options.map((option, index) => (
