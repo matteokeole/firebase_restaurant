@@ -13,6 +13,8 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Container>
                 <nav className={styles.footer__nav}>
+                    <NavLink to="/" className={styles.footer__nav__homeLink}></NavLink>
+
                     <NavLink to="/" className={({isActive}) => tag`${styles.footer__nav__link} ${isActive && styles.footer__nav__link__active}`}>
                         Home
                     </NavLink>

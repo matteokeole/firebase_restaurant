@@ -1,7 +1,7 @@
 @import "/src/variables.scss";
 
 .footer {
-  padding: 24px 0 72px 0;
+  padding: 16px 0 64px 0;
   background-color: $black;
 
   &__nav {
@@ -17,6 +17,14 @@
         color: $white;
         font-weight: 900;
       }
+    }
+
+    &__homeLink {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 16px;
+      border-radius: 0 64px 64px 64px;
+      background-color: $white;
     }
 
     &__logOutLink {
