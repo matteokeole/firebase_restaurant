@@ -1,11 +1,17 @@
+import {useContext} from "react";
+
 import Badge from "/src/components/Badge";
+import AddToCartButton from "/src/components/Button/AddToCartButton";
 import styles from "/src/components/Card/RecipeCard/index.module.scss";
+import CartContext from "/src/contexts/CartContext";
 
 /**
  * @param {Object} props
  * @param {import("/src/contexts/RecipeContext").Recipe} props.recipe
  */
 export default function RecipeCard({recipe}) {
+    const {isItemInCart, toggleItem} = useContext(CartContext);
+
     return (
         <div className={styles.recipeCard}>
             <img src={recipe.image} alt={recipe.name} className={styles.recipeCard__image} />
@@ -23,7 +29,7 @@ export default function RecipeCard({recipe}) {
                     </div>
 
                     <div className={styles.recipeCard__content__header__toolbar}>
-                        //
+                        <AddToCartButton isChecked={isItemInCart(recipe)} onClick={() => toggleItem(recipe)} />
                     </div>
                 </div>
 

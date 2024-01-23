@@ -27,6 +27,11 @@ export function CartContextProvider({children}) {
     /**
      * @param {import("/src/contexts/RecipeContext").Recipe} item
      */
+    const isItemInCart = item => cartItems.indexOf(item) !== -1;
+
+    /**
+     * @param {import("/src/contexts/RecipeContext").Recipe} item
+     */
     const addItem = item => setCartItems([...cartItems, item]);
 
     /**
@@ -34,8 +39,19 @@ export function CartContextProvider({children}) {
      */
     const removeItem = itemIndex => setCartItems(cartItems.toSpliced(itemIndex, 1));
 
+    /**
+     * @param {import("/src/contexts/RecipeContext").Recipe} item
+     */
+    const toggleItem = item => {
+        const itemIndex = cartItems.indexOf(item);
+
+        return itemIndex === -1 ?
+            addItem(item) :
+            removeItem(itemIndex);
+    };
+
     return (
-        <CartContext.Provider value={{cartItems, addItem, removeItem}}>
+        <CartContext.Provider value={{cartItems, isItemInCart, addItem, removeItem, toggleItem}}>
             {children}
         </CartContext.Provider>
     );
