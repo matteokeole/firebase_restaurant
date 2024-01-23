@@ -37,11 +37,13 @@
 
     &__quantity {
       display: flex;
+      align-items: center;
       column-gap: 4px;
       color: $gray;
       font-style: italic;
 
       &__select {
+        padding: 0;
         outline: none;
         border: 1px solid $gray;
         border-radius: 6px;
