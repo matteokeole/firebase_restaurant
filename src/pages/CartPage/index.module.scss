@@ -27,4 +27,8 @@
   border-radius: 8px;
   background-color: scale-color($green, $lightness: 80%);
   color: $green;
+
+  &:hover {
+    background-color: scale-color($color: $green, $lightness: 70%);
+  }
 }

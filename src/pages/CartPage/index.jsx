@@ -15,9 +15,11 @@ export default function CartPage() {
                 Cart
             </h1>
 
-            <span className={styles.cartItemCount}>
-                {cartItems.length} items
-            </span>
+            {!!cartItems.length && (
+                <span className={styles.cartItemCount}>
+                    {cartItems.length} item{cartItems.length === 1 ? "" : "s"}
+                </span>
+            )}
 
             {!!cartItems.length ? (
                 <ul className={styles.cartItems}>

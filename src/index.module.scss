@@ -73,12 +73,8 @@ input[type="email"], input[type="password"] {
   outline: none;
   border: 1px solid $gray;
   border-radius: 8px;
-  background-color: $lightGray;
+  background-color: $white;
   font-size: 1rem;
-
-  &:hover, &:focus {
-    background-color: $white;
-  }
 }
 
 button {
@@ -93,6 +89,5 @@ img {
 }
 
 main {
-  // padding: 32px 0 48px 0;
   background-color: $white;
 }

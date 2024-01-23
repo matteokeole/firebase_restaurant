@@ -13,10 +13,43 @@
   }
 
   &__image {
-    width: 64px;
+    width: 96px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2px;
+    flex-grow: 1;
+    padding: 16px;
+    border-left: 1px solid $gray;
+
+    &__title {
+      font-size: 1.2rem;
+    }
+
+    &__details {
+      color: $gray;
+    }
+
+    &__quantity {
+      display: flex;
+      column-gap: 4px;
+      color: $gray;
+      font-style: italic;
+
+      &__select {
+        outline: none;
+        border: 1px solid $gray;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  &__toolbar {
     padding: 16px;
   }
 }
