@@ -1,7 +1,25 @@
 @import "/src/variables.scss";
 
-.title {
-  margin-bottom: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__placeOrderLink {
+    padding: 8px 16px;
+    border: 1px solid $green;
+    border-radius: 8px;
+    background-color: scale-color($green, $lightness: 80%);
+    color: $green;
+
+    &:hover {
+      background-color: scale-color($color: $green, $lightness: 70%);
+    }
+  }
 }
 
 .cartItemCount {

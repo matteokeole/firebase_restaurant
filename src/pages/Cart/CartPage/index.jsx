@@ -4,16 +4,24 @@ import {Link} from "react-router-dom";
 import CartItem from "/src/components/CartItem";
 import Container from "/src/components/Container";
 import CartContext from "/src/contexts/CartContext";
-import styles from "/src/pages/CartPage/index.module.scss";
+import styles from "/src/pages/Cart/CartPage/index.module.scss";
 
 export default function CartPage() {
     const {cartItems} = useContext(CartContext);
 
     return (
         <Container>
-            <h1 className={styles.title}>
-                Cart
-            </h1>
+            <div className={styles.header}>
+                <h1 className={styles.header__title}>
+                    Cart
+                </h1>
+
+                {!!cartItems.length && (
+                    <Link to="/cart/order" className={styles.header__placeOrderLink}>
+                        Place order
+                    </Link>
+                )}
+            </div>
 
             {!!cartItems.length && (
                 <span className={styles.cartItemCount}>
