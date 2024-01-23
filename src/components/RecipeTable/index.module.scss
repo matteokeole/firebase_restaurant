@@ -34,6 +34,13 @@
 
   &__cell {
     padding: 16px;
+
+    &__editLink {
+      &:hover {
+        text-decoration: underline 2px;
+        text-underline-offset: 3px;
+      }
+    }
   }
 }
 

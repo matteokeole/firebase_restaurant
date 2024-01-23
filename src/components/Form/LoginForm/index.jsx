@@ -1,8 +1,8 @@
 import {useContext, useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
+import TextInput from "/src/components/Form/Input/TextInput";
 import styles from "/src/components/Form/LoginForm/index.module.scss";
-import TextInput from "/src/components/Form/TextInput";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
 
 export default function LoginForm() {
@@ -41,16 +41,16 @@ export default function LoginForm() {
             <TextInput
                 reference={registerInput}
                 type="email"
-                placeholder="Email *"
-                required
+                placeholder="Email"
+                required={true}
                 error={emailError}
             />
 
             <TextInput
                 reference={registerInput}
                 type="password"
-                placeholder="Password *"
-                required
+                placeholder="Password"
+                required={true}
                 error={null}
             />
 

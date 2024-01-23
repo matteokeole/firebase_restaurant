@@ -1,4 +1,5 @@
 import {useContext, useState} from "react";
+import {Link} from "react-router-dom";
 
 import Badge from "/src/components/Badge";
 import SortByNameButton from "/src/components/Button/SortByNameButton";
@@ -29,7 +30,7 @@ export default function RecipeTable() {
                     </th>
 
                     <th className={styles.recipeTable__head__row__cell}>
-                        Categories
+                        Meal Types
                     </th>
                 </tr>
             </thead>
@@ -51,7 +52,9 @@ function RecipeRow({recipe}) {
     return (
         <tr className={styles.recipeRow}>
             <td className={styles.recipeRow__cell}>
-                {recipe.name}
+                <Link to={`/administration/recipes/${recipe.id}`} className={styles.recipeRow__cell__editLink}>
+                    {recipe.name}
+                </Link>
             </td>
 
             <td className={styles.recipeRow__cell}>

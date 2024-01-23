@@ -1,4 +1,4 @@
-import styles from "/src/components/Form/TextInput/index.module.scss";
+import styles from "/src/components/Form/Input/TextInput/index.module.scss";
 import tag from "/src/utils/tag";
 
 /**
@@ -6,18 +6,22 @@ import tag from "/src/utils/tag";
  * @param {Object} props.reference
  * @param {String} props.type
  * @param {String} props.placeholder
+ * @param {?String} [props.value]
  * @param {Boolean} props.required
  * @param {?String} props.error
+ * @param {?Function} [props.onChange]
  */
-export default function TextInput({reference, type, placeholder, required, error}) {
+export default function TextInput({reference, type, placeholder, value, required, error, onChange}) {
     return (
         <label className={styles.label}>
             <input
                 ref={reference}
                 type={type}
-                placeholder={placeholder}
+                placeholder={`${placeholder} ${required && "*"}`}
+                value={value ?? ""}
                 required={required}
                 className={tag`${styles.label__input} ${!!error && styles.label__input__invalid}`}
+                onChange={onChange}
             />
 
             {!!error && (

@@ -38,7 +38,7 @@ export default function Header() {
                         </NavLink>
 
                         <NavLink to="/administration/recipes/new" className={styles.header__nav__link}>
-                            New recipes
+                            New recipe
                         </NavLink>
                     </div>
                 )}

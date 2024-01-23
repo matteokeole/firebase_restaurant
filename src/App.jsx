@@ -11,6 +11,7 @@ import {RecipeContextProvider} from "/src/contexts/RecipeContext";
 import AdministrationBasePage from "/src/pages/Administration/BasePage";
 import AdministrationHomePage from "/src/pages/Administration/HomePage";
 import AdministrationLogoutPage from "/src/pages/Administration/LogoutPage";
+import AdministrationRecipeEditPage from "/src/pages/Administration/RecipePage/EditPage";
 import AdministrationRecipeNewPage from "/src/pages/Administration/RecipePage/NewPage";
 import AdministrationRecipePage from "/src/pages/Administration/RecipePage";
 import CartPage from "/src/pages/CartPage";
@@ -42,6 +43,7 @@ export default function App() {
                                     <Route path="/administration" element={<AdministrationBasePage />}>
                                         <Route path="/administration" element={<AdministrationHomePage />} />
                                         <Route path="/administration/recipes" element={<AdministrationRecipePage />} />
+                                        <Route path="/administration/recipes/:id" element={<AdministrationRecipeEditPage />} />
                                         <Route path="/administration/recipes/new" element={<AdministrationRecipeNewPage />} />
                                         <Route path="/administration/logout" element={<AdministrationLogoutPage />} />
                                     </Route>

@@ -21,7 +21,7 @@ export default function LoginPage() {
                 Login
             </h1>
 
-            <div className={styles.loginFormContainer}>
+            <div className={styles.formContainer}>
                 <LoginForm />
             </div>
         </Container>
