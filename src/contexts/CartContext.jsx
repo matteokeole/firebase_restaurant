@@ -10,6 +10,7 @@ export default CartContext;
  */
 export function CartContextProvider({children}) {
     const [cartItems, setCartItems] = useState([]);
+    const [hasOrdered, setHasOrdered] = useState(false);
 
     /**
      * @param {import("/src/contexts/RecipeContext").Recipe} item
@@ -37,8 +38,10 @@ export function CartContextProvider({children}) {
             removeItem(itemIndex);
     };
 
+    const order = () => setHasOrdered(true);
+
     return (
-        <CartContext.Provider value={{cartItems, isItemInCart, addItem, removeItem, toggleItem}}>
+        <CartContext.Provider value={{cartItems, hasOrdered, isItemInCart, addItem, removeItem, toggleItem, order}}>
             {children}
         </CartContext.Provider>
     );

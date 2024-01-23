@@ -1,11 +1,13 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 import TextInput from "/src/components/Form/Input/TextInput";
 import styles from "/src/components/Form/OrderForm/index.module.scss";
+import CartContext from "/src/contexts/CartContext";
 
 export default function OrderForm() {
     const navigate = useNavigate();
+    const {order} = useContext(CartContext);
     const [userDetails, setUserDetails] = useState({
         firstName: null,
         lastName: null,
@@ -69,6 +71,8 @@ export default function OrderForm() {
 
     const handleSubmit = event => {
         event.preventDefault();
+
+        order();
 
         navigate("/cart/thanks");
     };

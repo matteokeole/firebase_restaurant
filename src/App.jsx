@@ -23,6 +23,7 @@ import NotFoundPage from "/src/pages/NotFoundPage";
 import OrderPage from "/src/pages/Cart/OrderPage";
 import PresentationPage from "/src/pages/PresentationPage";
 import SitemapPage from "/src/pages/SitemapPage";
+import ThanksPage from "/src/pages/Cart/ThanksPage";
 
 export default function App() {
     return (
@@ -41,6 +42,7 @@ export default function App() {
                                     <Route path="/contact" element={<ContactPage />} />
                                     <Route path="/cart" element={<CartPage />} />
                                     <Route path="/cart/order" element={<OrderPage />} />
+                                    <Route path="/cart/thanks" element={<ThanksPage />} />
                                     <Route path="/sitemap" element={<SitemapPage />} />
                                     <Route path="/administration" element={<AdministrationBasePage />}>
                                         <Route path="/administration" element={<AdministrationHomePage />} />
