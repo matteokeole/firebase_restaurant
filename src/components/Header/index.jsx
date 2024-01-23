@@ -1,10 +1,13 @@
+import {useContext} from "react";
 import {NavLink, useLocation} from "react-router-dom";
 
 import styles from "/src/components/Header/index.module.scss";
+import AuthenticationContext from "/src/contexts/AuthenticationContext";
 import tag from "/src/utils/tag";
 
 export default function Header() {
     const {pathname} = useLocation();
+    const {user} = useContext(AuthenticationContext);
     const isHome = pathname === "/";
 
     return (
@@ -27,6 +30,18 @@ export default function Header() {
                 <NavLink to="/cart" className={({isActive}) => tag`${styles.header__nav__link} ${isActive && styles.header__nav__link__active}`}>
                     Cart
                 </NavLink>
+
+                {!!user && (
+                    <div className={styles.header__nav__administrationContainer}>
+                        <NavLink to="/administration/recipes" className={styles.header__nav__link}>
+                            Recipes
+                        </NavLink>
+
+                        <NavLink to="/administration/recipes/new" className={styles.header__nav__link}>
+                            New recipes
+                        </NavLink>
+                    </div>
+                )}
             </nav>
         </header>
     );
