@@ -1,23 +1,23 @@
 @import "/src/variables.scss";
 
 .removeFromCartButton {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background-color: $red;
-  color: $white;
-  text-align: center;
-  font-size: 1.4rem;
+	width: 28px;
+	height: 28px;
+	border-radius: 6px;
+	background-color: $red;
+	color: $white;
+	text-align: center;
+	font-size: 1.4rem;
 
-  &:hover {
-    background-color: scale-color($red, $lightness: 20%);
-  }
+	&:hover {
+		background-color: scale-color($red, $lightness: 20%);
+	}
 
-  &__checked {
-    background-color: $red;
+	&__checked {
+		background-color: $red;
 
-    &:hover {
-      background-color: scale-color($red, $lightness: 20%);
-    }
-  }
+		&:hover {
+			background-color: scale-color($red, $lightness: 20%);
+		}
+	}
 }

@@ -4,15 +4,15 @@ import {Navigate, Outlet} from "react-router-dom";
 import AuthenticationContext from "/src/contexts/AuthenticationContext";
 
 export default function BasePage() {
-    const {user} = useContext(AuthenticationContext);
+	const {user} = useContext(AuthenticationContext);
 
-    if (!user) {
-        return (
-            <Navigate to="/administration/login" />
-        );
-    }
+	if (!user) {
+		return (
+			<Navigate to="/administration/login" />
+		);
+	}
 
-    return (
-        <Outlet />
-    );
+	return (
+		<Outlet />
+	);
 }

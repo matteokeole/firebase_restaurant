@@ -9,29 +9,29 @@ import styles from "/src/pages/Administration/RecipePage/EditPage/index.module.s
 import NotFoundPage from "/src/pages/NotFoundPage";
 
 export default function EditPage() {
-    const id = Number(useParams().id);
-    const {findById} = useContext(RecipeContext);
-    const recipe = findById(id);
+	const id = Number(useParams().id);
+	const {findById} = useContext(RecipeContext);
+	const recipe = findById(id);
 
-    if (!recipe) {
-        return (
-            <NotFoundPage />
-        );
-    }
+	if (!recipe) {
+		return (
+			<NotFoundPage />
+		);
+	}
 
-    return (
-        <Container>
-            <BackLink href="/administration/recipes">
-                Recipes
-            </BackLink>
+	return (
+		<Container>
+			<BackLink href="/administration/recipes">
+				Recipes
+			</BackLink>
 
-            <h1>
-                {recipe.name}
-            </h1>
+			<h1>
+				{recipe.name}
+			</h1>
 
-            <div className={styles.formContainer}>
-                <RecipeForm recipe={recipe} />
-            </div>
-        </Container>
-    );
+			<div className={styles.formContainer}>
+				<RecipeForm recipe={recipe} />
+			</div>
+		</Container>
+	);
 }

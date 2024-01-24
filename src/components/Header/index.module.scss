@@ -1,48 +1,48 @@
 @import "/src/variables.scss";
 
 .header {
-  display: flex;
-  align-items: flex-start;
-  padding: 12px 0;
-  top: 0;
-  position: sticky;
-  background-color: $black;
-  z-index: 1;
+	display: flex;
+	align-items: flex-start;
+	padding: 12px 0;
+	top: 0;
+	position: sticky;
+	background-color: $black;
+	z-index: 1;
 
-  &__home {
-    height: 120px;
-    margin-bottom: -144px;
-    background: linear-gradient(to bottom, #000b, transparent);
-  }
+	&__home {
+		height: 120px;
+		margin-bottom: -144px;
+		background: linear-gradient(to bottom, #000b, transparent);
+	}
 
-  &__logo {
-    width: 16px;
-    height: 16px;
-    margin: 0 16px;
-    border-radius: 0 16px 16px 16px;
-    background-color: $white;
-  }
+	&__logo {
+		width: 16px;
+		height: 16px;
+		margin: 0 16px;
+		border-radius: 0 16px 16px 16px;
+		background-color: $white;
+	}
 
-  &__nav {
-    display: flex;
-    column-gap: 8px;
+	&__nav {
+		display: flex;
+		column-gap: 8px;
 
-    &__link {
-      color: $gray;
+		&__link {
+			color: $gray;
 
-      &__active {
-        color: $white;
-        font-weight: 900;
-      }
-    }
+			&__active {
+				color: $white;
+				font-weight: 900;
+			}
+		}
 
-    &__administrationContainer {
-      display: flex;
-      column-gap: 8px;
-      padding: 2px 4px;
-      border-radius: 6px;
-      background-color: scale-color($gray, $lightness: -60%);
-      font-size: .8rem;
-    }
-  }
+		&__administrationContainer {
+			display: flex;
+			column-gap: 8px;
+			padding: 2px 4px;
+			border-radius: 6px;
+			background-color: scale-color($gray, $lightness: -60%);
+			font-size: .8rem;
+		}
+	}
 }

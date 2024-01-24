@@ -1,20 +1,20 @@
 @import "/src/variables.scss";
 
 .label {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2px;
 
-  &__input {
-    &__invalid {
-      border-color: $red !important;
-      background-color: scale-color($red, $lightness: 90%) !important;
-      color: $red;
-    }
-  }
+	&__input {
+		&__invalid {
+			border-color: $red !important;
+			background-color: scale-color($red, $lightness: 90%) !important;
+			color: $red;
+		}
+	}
 
-  &__error {
-    color: $red;
-    font-size: .8rem;
-  }
+	&__error {
+		color: $red;
+		font-size: .8rem;
+	}
 }

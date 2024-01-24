@@ -26,41 +26,41 @@ import SitemapPage from "/src/pages/SitemapPage";
 import ThanksPage from "/src/pages/Cart/ThanksPage";
 
 export default function App() {
-    return (
-        <StrictMode>
-            <BrowserRouter>
-                <AuthenticationContextProvider>
-                    <RecipeContextProvider>
-                        <CartContextProvider>
-                            <Header />
+	return (
+		<StrictMode>
+			<BrowserRouter>
+				<AuthenticationContextProvider>
+					<RecipeContextProvider>
+						<CartContextProvider>
+							<Header />
 
-                            <main>
-                                <Routes>
-                                    <Route path="/" element={<HomePage />} />
-                                    <Route path="/presentation" element={<PresentationPage />} />
-                                    <Route path="/menus" element={<MenuPage />} />
-                                    <Route path="/contact" element={<ContactPage />} />
-                                    <Route path="/cart" element={<CartPage />} />
-                                    <Route path="/cart/order" element={<OrderPage />} />
-                                    <Route path="/cart/thanks" element={<ThanksPage />} />
-                                    <Route path="/sitemap" element={<SitemapPage />} />
-                                    <Route path="/administration" element={<AdministrationBasePage />}>
-                                        <Route path="/administration" element={<AdministrationHomePage />} />
-                                        <Route path="/administration/recipes" element={<AdministrationRecipePage />} />
-                                        <Route path="/administration/recipes/:id" element={<AdministrationRecipeEditPage />} />
-                                        <Route path="/administration/recipes/new" element={<AdministrationRecipeNewPage />} />
-                                        <Route path="/administration/logout" element={<AdministrationLogoutPage />} />
-                                    </Route>
-                                    <Route path="/administration/login" element={<LoginPage />} />
-                                    <Route path="*" element={<NotFoundPage />} />
-                                </Routes>
-                            </main>
+							<main>
+								<Routes>
+									<Route path="/" element={<HomePage />} />
+									<Route path="/presentation" element={<PresentationPage />} />
+									<Route path="/menus" element={<MenuPage />} />
+									<Route path="/contact" element={<ContactPage />} />
+									<Route path="/cart" element={<CartPage />} />
+									<Route path="/cart/order" element={<OrderPage />} />
+									<Route path="/cart/thanks" element={<ThanksPage />} />
+									<Route path="/sitemap" element={<SitemapPage />} />
+									<Route path="/administration" element={<AdministrationBasePage />}>
+										<Route path="/administration" element={<AdministrationHomePage />} />
+										<Route path="/administration/recipes" element={<AdministrationRecipePage />} />
+										<Route path="/administration/recipes/:id" element={<AdministrationRecipeEditPage />} />
+										<Route path="/administration/recipes/new" element={<AdministrationRecipeNewPage />} />
+										<Route path="/administration/logout" element={<AdministrationLogoutPage />} />
+									</Route>
+									<Route path="/administration/login" element={<LoginPage />} />
+									<Route path="*" element={<NotFoundPage />} />
+								</Routes>
+							</main>
 
-                            <Footer />
-                        </CartContextProvider>
-                    </RecipeContextProvider>
-                </AuthenticationContextProvider>
-            </BrowserRouter>
-        </StrictMode>
-    );
+							<Footer />
+						</CartContextProvider>
+					</RecipeContextProvider>
+				</AuthenticationContextProvider>
+			</BrowserRouter>
+		</StrictMode>
+	);
 }

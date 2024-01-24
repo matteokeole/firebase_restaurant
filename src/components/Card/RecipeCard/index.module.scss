@@ -1,50 +1,50 @@
 @import "/src/variables.scss";
 
 .recipeCard {
-  overflow: hidden;
-  border: 1px solid $gray;
-  border-radius: 8px;
-  background-color: $lightGray;
-  cursor: pointer;
+	overflow: hidden;
+	border: 1px solid $gray;
+	border-radius: 8px;
+	background-color: $lightGray;
+	cursor: pointer;
 
-  &:hover {
-    background-color: $white;
-  }
+	&:hover {
+		background-color: $white;
+	}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    padding: 16px;
-    border-top: 1px solid $gray;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+		padding: 16px;
+		border-top: 1px solid $gray;
 
-    &__header {
-      display: flex;
-      justify-content: space-between;
+		&__header {
+			display: flex;
+			justify-content: space-between;
 
-      &__presentation {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4px;
+			&__presentation {
+				display: flex;
+				flex-direction: column;
+				row-gap: 4px;
 
-        &__title {
-          font-size: 1.2rem;
-        }
+				&__title {
+					font-size: 1.2rem;
+				}
 
-        &__details {
-          color: $gray;
-        }
-      }
+				&__details {
+					color: $gray;
+				}
+			}
 
-      &__toolbar {
-        //
-      }
-    }
+			&__toolbar {
+				//
+			}
+		}
 
-    &__ingredients {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-  }
+		&__ingredients {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px;
+		}
+	}
 }

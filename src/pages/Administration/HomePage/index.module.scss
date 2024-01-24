@@ -1,27 +1,27 @@
 @import "/src/variables.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  &__toolbar {
-    &__logOutLink {
-      padding: 8px 16px;
-      border: 1px solid $red;
-      border-radius: 8px;
-      background-color: scale-color($red, $lightness: 80%);
-      color: $red;
+	&__toolbar {
+		&__logOutLink {
+			padding: 8px 16px;
+			border: 1px solid $red;
+			border-radius: 8px;
+			background-color: scale-color($red, $lightness: 80%);
+			color: $red;
 
-      &:hover {
-        background-color: scale-color($red, $lightness: 70%);
-      }
-    }
-  }
+			&:hover {
+				background-color: scale-color($red, $lightness: 70%);
+			}
+		}
+	}
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
 }

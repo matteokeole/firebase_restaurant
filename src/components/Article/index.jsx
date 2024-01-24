@@ -5,9 +5,9 @@ import styles from "/src/components/Article/index.module.scss";
  * @param {React.ReactNode} props.children
  */
 export default function Article({children}) {
-    return (
-        <article className={styles.article}>
-            {children}
-        </article>
-    );
+	return (
+		<article className={styles.article}>
+			{children}
+		</article>
+	);
 }

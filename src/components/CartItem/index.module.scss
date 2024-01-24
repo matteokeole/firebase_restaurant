@@ -1,57 +1,57 @@
 @import "/src/variables.scss";
 
 .cartItem {
-  display: flex;
-  background-color: $lightGray;
+	display: flex;
+	background-color: $lightGray;
 
-  &:not(&:last-child) {
-    border-bottom: 1px solid $gray;
-  }
+	&:not(&:last-child) {
+		border-bottom: 1px solid $gray;
+	}
 
-  &:hover {
-    background-color: $white;
-  }
+	&:hover {
+		background-color: $white;
+	}
 
-  &__image {
-    width: 96px;
-    object-fit: cover;
-    object-position: center;
-  }
+	&__image {
+		width: 96px;
+		object-fit: cover;
+		object-position: center;
+	}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 2px;
-    flex-grow: 1;
-    padding: 16px;
-    border-left: 1px solid $gray;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 2px;
+		flex-grow: 1;
+		padding: 16px;
+		border-left: 1px solid $gray;
 
-    &__title {
-      font-size: 1.2rem;
-    }
+		&__title {
+			font-size: 1.2rem;
+		}
 
-    &__details {
-      color: $gray;
-    }
+		&__details {
+			color: $gray;
+		}
 
-    &__quantity {
-      display: flex;
-      align-items: center;
-      column-gap: 4px;
-      color: $gray;
-      font-style: italic;
+		&__quantity {
+			display: flex;
+			align-items: center;
+			column-gap: 4px;
+			color: $gray;
+			font-style: italic;
 
-      &__select {
-        padding: 0;
-        outline: none;
-        border: 1px solid $gray;
-        border-radius: 6px;
-      }
-    }
-  }
+			&__select {
+				padding: 0;
+				outline: none;
+				border: 1px solid $gray;
+				border-radius: 6px;
+			}
+		}
+	}
 
-  &__toolbar {
-    padding: 16px;
-  }
+	&__toolbar {
+		padding: 16px;
+	}
 }

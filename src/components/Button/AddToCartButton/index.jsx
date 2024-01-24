@@ -9,25 +9,25 @@ import tag from "/src/utils/tag";
  * @param {Function} props.onClick
  */
 export default function AddToCartButton({isChecked: _isChecked, onClick}) {
-    const [isChecked, setIsChecked] = useState(_isChecked);
+	const [isChecked, setIsChecked] = useState(_isChecked);
 
-    const handleClick = () => {
-        onClick();
+	const handleClick = () => {
+		onClick();
 
-        setIsChecked(!isChecked);
-    };
+		setIsChecked(!isChecked);
+	};
 
-    return (
-        <button title="Add to cart" className={tag`${styles.addToCartButton} ${isChecked && styles.addToCartButton__checked}`} onClick={handleClick}>
-            {isChecked ? (
-                <>
-                	&#45;
-                </>
-            ) : (
-                <>
-                    &#43;
-                </>
-            )}
-        </button>
-    );
+	return (
+		<button title="Add to cart" className={tag`${styles.addToCartButton} ${isChecked && styles.addToCartButton__checked}`} onClick={handleClick}>
+			{isChecked ? (
+				<>
+					&#45;
+				</>
+			) : (
+				<>
+					&#43;
+				</>
+			)}
+		</button>
+	);
 }

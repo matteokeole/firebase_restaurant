@@ -8,9 +8,9 @@ import styles from "/src/components/Link/BackLink/index.module.scss";
  * @param {React.ReactNode} props.children
  */
 export default function BackLink({href, children}) {
-    return (
-        <Link to={href} className={styles.backLink}>
-            &larr; {children}
-        </Link>
-    );
+	return (
+		<Link to={href} className={styles.backLink}>
+			&larr; {children}
+		</Link>
+	);
 }

@@ -1,42 +1,42 @@
 @import "/src/variables.scss";
 
 .featuredRecipeSlide {
-  position: relative;
+	position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-    box-shadow: inset 0 -480px 120px 0 #0008;
-  }
+	&::before {
+		content: "";
+		display: block;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		position: absolute;
+		box-shadow: inset 0 -480px 120px 0 #0008;
+	}
 
-  &__image {
-    max-height: 100vh;
-    object-fit: cover;
-    object-position: center;
-  }
+	&__image {
+		max-height: 100vh;
+		object-fit: cover;
+		object-position: center;
+	}
 
-  &__presentation {
-    right: 0;
-    bottom: 64px;
-    left: 0;
-    position: absolute;
+	&__presentation {
+		right: 0;
+		bottom: 64px;
+		left: 0;
+		position: absolute;
 
-    &__title {
-      margin-bottom: 12px;
-      color: $white;
-      font-size: 4rem;
-    }
+		&__title {
+			margin-bottom: 12px;
+			color: $white;
+			font-size: 4rem;
+		}
 
-    &__subtitle {
-      color: $gray;
-      font-size: 2rem;
-      font-style: italic;
-      font-weight: normal;
-    }
-  }
+		&__subtitle {
+			color: $gray;
+			font-size: 2rem;
+			font-style: italic;
+			font-weight: normal;
+		}
+	}
 }

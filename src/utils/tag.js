@@ -6,13 +6,13 @@
  * @returns {String}
  */
 export default function tag(strings, ...args) {
-    const className = strings.reduce((final, current, i) => {
-        if (i = args[i - 1]) {
-            final += i;
-        }
+	const className = strings.reduce((final, current, i) => {
+		if (i = args[i - 1]) {
+			final += i;
+		}
 
-        return final + current;
-    });
+		return final + current;
+	});
 
-    return className.trim();
+	return className.trim();
 }

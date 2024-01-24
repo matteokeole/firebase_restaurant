@@ -5,37 +5,37 @@ import Container from "/src/components/Container";
 import styles from "/src/pages/SitemapPage/index.module.scss";
 
 export default function SitemapPage() {
-    return (
-        <Container>
-            <h1>
-                Sitemap
-            </h1>
+	return (
+		<Container>
+			<h1>
+				Sitemap
+			</h1>
 
-            <nav className={styles.sitemap}>
-                <Link to="/">
-                    <Card>
-                        Home
-                    </Card>
-                </Link>
+			<nav className={styles.sitemap}>
+				<Link to="/">
+					<Card>
+						Home
+					</Card>
+				</Link>
 
-                <Link to="/presentation">
-                    <Card>
-                        Presentation
-                    </Card>
-                </Link>
+				<Link to="/presentation">
+					<Card>
+						Presentation
+					</Card>
+				</Link>
 
-                <Link to="/menus">
-                    <Card>
-                        Our Menus
-                    </Card>
-                </Link>
+				<Link to="/menus">
+					<Card>
+						Our Menus
+					</Card>
+				</Link>
 
-                <Link to="/contact">
-                    <Card>
-                        Contact Us
-                    </Card>
-                </Link>
-            </nav>
-        </Container>
-    );
+				<Link to="/contact">
+					<Card>
+						Contact Us
+					</Card>
+				</Link>
+			</nav>
+		</Container>
+	);
 }

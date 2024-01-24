@@ -7,23 +7,23 @@ import AuthenticationContext from "/src/contexts/AuthenticationContext";
 import styles from "/src/pages/LoginPage/index.module.scss";
 
 export default function LoginPage() {
-    const {user} = useContext(AuthenticationContext);
+	const {user} = useContext(AuthenticationContext);
 
-    if (!!user) {
-        return (
-            <Navigate to="/administration" />
-        );
-    }
+	if (!!user) {
+		return (
+			<Navigate to="/administration" />
+		);
+	}
 
-    return (
-        <Container>
-            <h1>
-                Login
-            </h1>
+	return (
+		<Container>
+			<h1>
+				Login
+			</h1>
 
-            <div className={styles.formContainer}>
-                <LoginForm />
-            </div>
-        </Container>
-    );
+			<div className={styles.formContainer}>
+				<LoginForm />
+			</div>
+		</Container>
+	);
 }

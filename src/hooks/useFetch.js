@@ -4,23 +4,23 @@ import {useEffect, useState} from "react";
  * @param {String} url
  */
 export default function useFetch(url) {
-    const [json, setJson] = useState(null);
+	const [json, setJson] = useState(null);
 
-    useEffect(() => {
-        const getJson = async () => {
-            const response = await fetch(url);
+	useEffect(() => {
+		const getJson = async () => {
+			const response = await fetch(url);
 
-            if (!response.ok) {
-                return;
-            }
+			if (!response.ok) {
+				return;
+			}
 
-            const json = await response.json();
+			const json = await response.json();
 
-            setJson(json);
-        };
+			setJson(json);
+		};
 
-        getJson();
-    }, []);
+		getJson();
+	}, []);
 
-    return json;
+	return json;
 }

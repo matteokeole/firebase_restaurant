@@ -7,9 +7,9 @@ import tag from "/src/utils/tag";
  * @param {React.ReactNode} props.children
  */
 export default function Container({className, children}) {
-    return (
-        <div className={tag`${styles.container} ${className}`}>
-            {children}
-        </div>
-    );
+	return (
+		<div className={tag`${styles.container} ${className}`}>
+			{children}
+		</div>
+	);
 }

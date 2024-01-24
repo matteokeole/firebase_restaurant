@@ -9,40 +9,40 @@ export default CartContext;
  * @param {React.ReactNode} props.children
  */
 export function CartContextProvider({children}) {
-    const [cartItems, setCartItems] = useState([]);
-    const [hasOrdered, setHasOrdered] = useState(false);
+	const [cartItems, setCartItems] = useState([]);
+	const [hasOrdered, setHasOrdered] = useState(false);
 
-    /**
-     * @param {import("/src/contexts/RecipeContext").Recipe} item
-     */
-    const isItemInCart = item => cartItems.indexOf(item) !== -1;
+	/**
+	 * @param {import("/src/contexts/RecipeContext").Recipe} item
+	 */
+	const isItemInCart = item => cartItems.indexOf(item) !== -1;
 
-    /**
-     * @param {import("/src/contexts/RecipeContext").Recipe} item
-     */
-    const addItem = item => setCartItems([...cartItems, item]);
+	/**
+	 * @param {import("/src/contexts/RecipeContext").Recipe} item
+	 */
+	const addItem = item => setCartItems([...cartItems, item]);
 
-    /**
-     * @param {Number} itemIndex
-     */
-    const removeItem = itemIndex => setCartItems(cartItems.toSpliced(itemIndex, 1));
+	/**
+	 * @param {Number} itemIndex
+	 */
+	const removeItem = itemIndex => setCartItems(cartItems.toSpliced(itemIndex, 1));
 
-    /**
-     * @param {import("/src/contexts/RecipeContext").Recipe} item
-     */
-    const toggleItem = item => {
-        const itemIndex = cartItems.indexOf(item);
+	/**
+	 * @param {import("/src/contexts/RecipeContext").Recipe} item
+	 */
+	const toggleItem = item => {
+		const itemIndex = cartItems.indexOf(item);
 
-        return itemIndex === -1 ?
-            addItem(item) :
-            removeItem(itemIndex);
-    };
+		return itemIndex === -1 ?
+			addItem(item) :
+			removeItem(itemIndex);
+	};
 
-    const order = () => setHasOrdered(true);
+	const order = () => setHasOrdered(true);
 
-    return (
-        <CartContext.Provider value={{cartItems, hasOrdered, isItemInCart, addItem, removeItem, toggleItem, order}}>
-            {children}
-        </CartContext.Provider>
-    );
+	return (
+		<CartContext.Provider value={{cartItems, hasOrdered, isItemInCart, addItem, removeItem, toggleItem, order}}>
+			{children}
+		</CartContext.Provider>
+	);
 }

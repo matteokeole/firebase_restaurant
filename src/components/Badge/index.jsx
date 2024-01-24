@@ -5,9 +5,9 @@ import styles from "/src/components/Badge/index.module.scss";
  * @param {React.ReactNode} props.children
  */
 export default function Badge({children}) {
-    return (
-        <div className={styles.badge}>
-            {children}
-        </div>
-    );
+	return (
+		<div className={styles.badge}>
+			{children}
+		</div>
+	);
 }

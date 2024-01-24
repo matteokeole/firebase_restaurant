@@ -12,20 +12,20 @@ SwiperCore.use([Autoplay]);
  * @param {React.ReactNode} props.children
  */
 export default function Carousel({children}) {
-    return (
-        <Swiper
-            autoplay={{
-                delay: 8000,
-            }}
-            loop={true}
-            speed={500}
-            className={styles.carousel}
-        >
-            {children.map((slide, index) => (
-                <SwiperSlide key={index}>
-                    {slide}
-                </SwiperSlide>
-            ))}
-        </Swiper>
-    );
+	return (
+		<Swiper
+			autoplay={{
+				delay: 8000,
+			}}
+			loop={true}
+			speed={500}
+			className={styles.carousel}
+		>
+			{children.map((slide, index) => (
+				<SwiperSlide key={index}>
+					{slide}
+				</SwiperSlide>
+			))}
+		</Swiper>
+	);
 }

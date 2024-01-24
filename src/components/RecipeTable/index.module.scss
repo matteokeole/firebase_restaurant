@@ -1,50 +1,50 @@
 @import "/src/variables.scss";
 
 .recipeTable {
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid $gray;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: $lightGray;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid $gray;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: $lightGray;
 
-  &__head {
-    &__row {
-      &__cell {
-        padding: 16px;
-        color: $gray;
-        text-align: left;
-        font-style: italic;
-        font-weight: 400;
-      }
-    }
-  }
+	&__head {
+		&__row {
+			&__cell {
+				padding: 16px;
+				color: $gray;
+				text-align: left;
+				font-style: italic;
+				font-weight: 400;
+			}
+		}
+	}
 
-  &__body {
-    overflow: hidden;
-  }
+	&__body {
+		overflow: hidden;
+	}
 }
 
 .recipeRow {
-  border-top: 1px solid $gray;
+	border-top: 1px solid $gray;
 
-  &:hover {
-    background-color: $white;
-  }
+	&:hover {
+		background-color: $white;
+	}
 
-  &__cell {
-    padding: 16px;
+	&__cell {
+		padding: 16px;
 
-    &__editLink {
-      &:hover {
-        text-decoration: underline 2px;
-        text-underline-offset: 3px;
-      }
-    }
-  }
+		&__editLink {
+			&:hover {
+				text-decoration: underline 2px;
+				text-underline-offset: 3px;
+			}
+		}
+	}
 }
 
 .recipeCategories {
-  display: flex;
-  column-gap: 4px;
+	display: flex;
+	column-gap: 4px;
 }

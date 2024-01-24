@@ -7,23 +7,23 @@ import styles from "/src/pages/Cart/OrderPage/index.module.scss";
 import NotFoundPage from "/src/pages/NotFoundPage";
 
 export default function OrderPage() {
-    const {cartItems} = useContext(CartContext);
+	const {cartItems} = useContext(CartContext);
 
-    if (!cartItems.length) {
-        return (
-            <NotFoundPage />
-        );
-    }
+	if (!cartItems.length) {
+		return (
+			<NotFoundPage />
+		);
+	}
 
-    return (
-        <Container>
-            <h1>
-                Fill in your details
-            </h1>
+	return (
+		<Container>
+			<h1>
+				Fill in your details
+			</h1>
 
-            <div className={styles.formContainer}>
-                <OrderForm />
-            </div>
-        </Container>
-    );
+			<div className={styles.formContainer}>
+				<OrderForm />
+			</div>
+		</Container>
+	);
 }

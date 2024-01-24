@@ -1,21 +1,21 @@
 @import "/src/variables.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  &__toolbar {
-    &__newRecipeLink {
-      padding: 8px 16px;
-      border: 1px solid $green;
-      border-radius: 8px;
-      background-color: scale-color($green, $lightness: 80%);
-      color: $green;
+	&__toolbar {
+		&__newRecipeLink {
+			padding: 8px 16px;
+			border: 1px solid $green;
+			border-radius: 8px;
+			background-color: scale-color($green, $lightness: 80%);
+			color: $green;
 
-      &:hover {
-        background-color: scale-color($green, $lightness: 70%);
-      }
-    }
-  }
+			&:hover {
+				background-color: scale-color($green, $lightness: 70%);
+			}
+		}
+	}
 }

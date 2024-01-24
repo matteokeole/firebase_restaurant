@@ -6,25 +6,25 @@ import {auth} from "/firebase.config";
 import Container from "/src/components/Container";
 
 export default function LogoutPage() {
-    const navigate = useNavigate();
+	const navigate = useNavigate();
 
-    useEffect(() => {
-        const logout = async () => {
-            try {
-                await signOut(auth);
-            } catch {
-                console.error("Log out failed, please try again.");
-            }
+	useEffect(() => {
+		const logout = async () => {
+			try {
+				await signOut(auth);
+			} catch {
+				console.error("Log out failed, please try again.");
+			}
 
-            navigate("/");
-        };
+			navigate("/");
+		};
 
-        logout();
-    }, []);
+		logout();
+	}, []);
 
-    return (
-        <>
-            Logging out...
-        </>
-    );
+	return (
+		<>
+			Logging out...
+		</>
+	);
 }
