@@ -19,7 +19,7 @@ export default function TextInput({reference, type, placeholder, value, required
 				ref={reference}
 				type={type}
 				placeholder={`${placeholder}${required ? " *" : ""}`}
-				value={value ?? ""}
+				value={value ?? undefined}
 				required={required}
 				maxLength={maxLength}
 				className={tag`${styles.label__input} ${!!error && styles.label__input__invalid}`}
